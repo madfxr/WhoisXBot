@@ -18,7 +18,7 @@
 
     if ($text == "/start") {
       file_put_contents($file);
-      $msg = "Welcome to WHOIS Lookup Utility: for TLD, gTLD, ccTLD and mTLD";
+      $msg = "Welcome to WhoisXBot - WHOIS Lookup Utility: for TLD, gTLD, ccTLD and mTLD with Telegram Bot (https://github.com/xnxmx/whoisxbot";
     }
     
     else {
