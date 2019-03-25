@@ -28,5 +28,5 @@ whois - Client for the whois directory service
 @whoisXbot (https://t.me/whoisXbot)
 
 ## Notes
-- SERVBot is still tried on CentOS 7 x86_64 only
+- WhoisXBot is still tried on CentOS 7 x86_64 only
 - If you are using another operating system, feel free to make changes to an existing PHP source code
