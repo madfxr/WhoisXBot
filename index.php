@@ -34,7 +34,7 @@
             }
           }
           $url = str_replace("'", "", $msgs[1]);
-          $msg = shell_exec('whois ' . "'" . $url . "'" . '| grep -E "Domain Name:|Registry Domain ID:|Registrar WHOIS Server:|Registrar URL:|Updated Date:|Creation Date:|Registry Expiry Date:|Registrar Registration Expiration Date:|Registrar:|Registrar IANA ID:|Registrar Abuse Contact Email:|Registrar Abuse Contact Phone:|Reseller:|Domain Status:|Registrant Organization:|Registrant State/Province:|Registrant Country:|Name Server:|Name Server:|DNSSEC:|Domain ID:|Domain Name:|Created On:|Last Updated On:|Expiration Date:|Status:|Status:|Sponsoring Registrar Organization:|Sponsoring Registrar City:|Sponsoring Registrar Postal Code:|Sponsoring Registrar|Country:|Sponsoring Registrar Phone:|Sponsoring Registrar Contact Email:"');
+          $msg = shell_exec('whois ' . "'" . $url . "'" . '| grep -E "is available for registration|The queried object does not exist:|No Data Found|DOMAIN NOT FOUND|Domain Name:|Registry Domain ID:|Registrar WHOIS Server:|Registrar URL:|Updated Date:|Creation Date:|Registry Expiry Date:|Registrar Registration Expiration Date:|Registrar:|Registrar IANA ID:|Registrar Abuse Contact Email:|Registrar Abuse Contact Phone:|Reseller:|Domain Status:|Registrant Organization:|Registrant State/Province:|Registrant Country:|Name Server:|Name Server:|DNSSEC:|Domain ID:|Domain Name:|Created On:|Last Updated On:|Expiration Date:|Status:|Status:|Sponsoring Registrar Organization:|Sponsoring Registrar City:|Sponsoring Registrar Postal Code:|Sponsoring Registrar|Country:|Sponsoring Registrar Phone:|Sponsoring Registrar Contact Email:"');
         }
         break;
       }
