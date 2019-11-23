@@ -20,6 +20,11 @@
       file_put_contents($file);
       $msg = "Welcome to WhoisXBot - WHOIS Lookup Utility: for TLD, gTLD, ccTLD and mTLD with Telegram Bot (https://github.com/xnxmx/whoisxbot)";
     }
+
+    elseif ($text == "/whois") {
+      file_put_contents($file);
+      $msg = "To see the WHOIS results, please type: /whois domain.ext";
+    }
     
     else {
       $msgs = explode(" ", $text);
