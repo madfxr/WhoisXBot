@@ -7,7 +7,7 @@
 - PHP
 - BIND
 - Certbot
-- jwhois
+- whois
 
 ## Installation
 - Configure the Web Server and SSL: ``https://certbot.eff.org/lets-encrypt/centosrhel7-nginx``
