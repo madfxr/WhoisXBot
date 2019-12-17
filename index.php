@@ -23,7 +23,7 @@
 
     elseif ($text == "/whois") {
       file_put_contents($file);
-      $msg = "To see the WHOIS results, please type: /whois domain.ext";
+      $msg = "To see the WHOIS results, please type: /whois domain, domain.tld or ip address";
     }
     
     else {
@@ -39,7 +39,7 @@
             }
           }
           $url = str_replace("'", "", $msgs[1]);
-          $msg = shell_exec('whois ' . "'" . $url . "'" . '| grep -E "is available for registration|can temporarily not be answered|ERROR: domain not found|NO MATCH:|Invalid query or domain name not known|NOT FOUND|No match for|No match for domain|The queried object does not exist:|No Data Found|DOMAIN NOT FOUND|Domain Name:|Registry Domain ID:|Registrar WHOIS Server:|Registrar URL:|Updated Date:|Creation Date:|Registry Expiry Date:|Registrar Registration Expiration Date:|Registrar:|Registrar IANA ID:|Registrar Abuse Contact Email:|Registrar Abuse Contact Phone:|Reseller:|Domain Status:|Registrant Organization:|Registrant State/Province:|Registrant Country:|Name Server:|Name Server:|DNSSEC:|Domain ID:|Domain Name:|Created On:|Last Updated On:|Expiration Date:|Status:|Status:|Sponsoring Registrar Organization:|Sponsoring Registrar City:|Sponsoring Registrar Postal Code:|Sponsoring Registrar|Country:|Sponsoring Registrar Phone:|Sponsoring Registrar Contact Email:"');
+          $msg = shell_exec('whois -h whois.iana.org ' . "'" . $url . "'" . '| grep -E "% Information related to|domain:|organisation:|contact:|name:|nserver:|ds-rdata:|whois:|created:|changed:|inetnum:|netname:|descr:|country:|admin-c:|tech-c:|remarks:|mnt-by:|mnt-routes:|mnt-irt:|status:|last-modified:|source:|irt:|address:|e-mail:|abuse-mailbox:|auth:|person:|phone:|fax-no:|nic-hdl:|route:|origin:|is available for registration|can temporarily not be answered|ERROR: domain not found|NO MATCH:|Invalid query or domain name not known|NOT FOUND|No match for|No match for domain|The queried object does not exist:|No Data Found|DOMAIN NOT FOUND|Domain Name:|Registry Domain ID:|Registrar WHOIS Server:|Registrar URL:|Updated Date:|Creation Date:|Registry Expiry Date:|Registrar Registration Expiration Date:|Registrar:|Registrar IANA ID:|Registrar Abuse Contact Email:|Registrar Abuse Contact Phone:|Reseller:|Domain Status:|Registrant Organization:|Registrant State/Province:|Registrant Country:|Name Server:|Name Server:|DNSSEC:|Domain ID:|Domain Name:|Created On:|Last Updated On:|Expiration Date:|Status:|Status:|Sponsoring Registrar Organization:|Sponsoring Registrar City:|Sponsoring Registrar Postal Code:|Sponsoring Registrar|Country:|Sponsoring Registrar Phone:|Sponsoring Registrar Contact Email:"');
         }
         break;
       }
