@@ -1,4 +1,4 @@
-# WHOIS Lookup Utility: for TLD, gTLD, ccTLD and mTLD with Telegram Bot
+# WHOIS Lookup Utility for TLD, gTLD, ccTLD & mTLD with Telegram Bot
 
 ## Requirements
 - Git
