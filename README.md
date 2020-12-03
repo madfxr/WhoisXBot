@@ -11,7 +11,7 @@
 
 ## Installation
 - Configure the Web Server and SSL: ``https://certbot.eff.org/lets-encrypt/centosrhel7-nginx``
-- Cloning PHP source code: ``https://github.com/xnxmx/whoisxbot.git``
+- Cloning PHP source code: ``https://github.com/madfxr/whoisxbot.git``
 - Chat in Telegram with ``@BotFather (https://t.me/BotFather)`` and create a new bot
 - Get your API token (example: ``613961047:AZFWy0k603kLssujSIkKacmKuxxxTnq8Wl4``)
 - In php file line 2, change ``<authorization_token>`` with your API token (example: ``613961047:AZFWy0k603kLssujSIkKacmKuxxxTnq8Wl4``)
