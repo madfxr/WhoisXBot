@@ -1,14 +1,14 @@
 # WHOIS Lookup Utility for TLD, gTLD, ccTLD & mTLD with Telegram Bot
 
 ## Requirements
-- Git
-- Nginx
-- PHP-FPM
-- PHP
-- BIND
-- Certbot
-- Whois
-- Telegram
+- Git.
+- Nginx.
+- PHP-FPM.
+- PHP.
+- BIND.
+- Certbot.
+- Whois.
+- Telegram.
 
 ## Installation
 - Configure the Web Server and SSL: ``https://certbot.eff.org/lets-encrypt/centosrhel7-nginx``
@@ -24,8 +24,6 @@
 whois - Client for the whois directory service
 ```
 
-- Enjoy!
-
 ## Notes
-- WhoisXBot is still tried on CentOS 7 x86_64 only
-- If you are using another operating system, feel free to make changes to an existing PHP source code
+- WhoisXBot is still tried on CentOS 7 x86_64 only.
+- If you are using another operating system, feel free to make changes to an existing PHP source code.
